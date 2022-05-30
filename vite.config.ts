@@ -9,7 +9,7 @@ export default defineConfig({
     host: true,
     port: 3000,
     hmr: {
-      host: 'laravel-sanctum.work',
+      host: 'laravel-vue-sanctum.work',
       clientPort: 80,
     },
   }
