@@ -9,8 +9,9 @@ export const authMiddleware: NavigationGuard = async (to, from, next) => {
     })
     .catch((error) => {
       if (error.response.status === 401) {
-        next({ name: 'Login' })
+        next('/login')
       }
+      next()
     })
 }
 
