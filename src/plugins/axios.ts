@@ -8,7 +8,7 @@ export interface ApiResponse<T> {
 
 const config = {
   withCredentials: true,
-  baseURL: 'http://api.laravel-vue-sanctum.work/api',
+  baseURL: 'http://api.docker-laravel-vue.work/api',
   headers: {
     'Content-Type': 'application/json',
     'X-Requested-With': 'XMLHttpRequest'
