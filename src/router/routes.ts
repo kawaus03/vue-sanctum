@@ -1,4 +1,5 @@
 import { RouteRecordRaw } from 'vue-router'
+import { authMiddleware, guestMiddleware } from './navigation-guards'
 
 import Login from '../pages/Login.vue'
 import Home from '../pages/Home.vue'
@@ -10,11 +11,13 @@ export const routes: Array<RouteRecordRaw> = [
   {
     path: '/login',
     name: 'Login',
-    component: Login
+    component: Login,
+    beforeEnter: guestMiddleware
   },
   {
     path: HOME_PATH,
     name: 'Home',
-    component: Home
+    component: Home,
+    beforeEnter: authMiddleware
   },
 ]
