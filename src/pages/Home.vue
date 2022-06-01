@@ -7,7 +7,7 @@
 
 <script lang="ts">
 import { defineComponent, onMounted } from 'vue'
-import { useStore } from '../store/index'
+import { useStore } from '~/store/index'
 
 export default defineComponent({
   setup() {

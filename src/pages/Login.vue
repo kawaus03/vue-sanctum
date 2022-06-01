@@ -1,24 +1,33 @@
 <template>
-  <h1 class="text-3xl font-bold underline">
-    Login pag
+  <h1 class="text-3xl font-bold underline mb-4">
+    Login page
   </h1>
 
   <form @submit.prevent="onSubmit">
     <div>
-      <input v-model="email" type="email" placeholder="Email">
+      <input
+        v-model="email" type="email" placeholder="Email"
+        class="border rounded mb-2 px-2"
+      >
     </div>
     <div>
-      <input v-model="password" type="password" placeholder="Password">
+      <input
+        v-model="password" type="password" placeholder="Password"
+        class="border rounded mb-2 px-2"
+      >
     </div>
-    <button type="submit">Login</button>
+    <button
+      type="submit"
+      class="border rounded border-blue-500 px-2"
+    >Login</button>
   </form>
 </template>
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
-import { axios } from '../plugins/axios'
+import { axios } from '~/plugins/axios'
 import { useRouter } from 'vue-router'
-import { HOME_PATH } from '../router/routes'
+import { HOME_PATH } from '~/router/routes'
 
 export default defineComponent({
   setup() {
