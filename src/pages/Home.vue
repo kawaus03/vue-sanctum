@@ -1,9 +1,9 @@
 <template>
-Home page
+  Home page
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, computed } from 'vue'
+import { defineComponent, onMounted } from 'vue'
 import { useStore } from '../store/index'
 
 export default defineComponent({
