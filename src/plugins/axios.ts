@@ -8,7 +8,7 @@ export interface ApiResponse<T> {
 
 const config = {
   withCredentials: true,
-  baseURL: `${import.meta.env.VITE_APP_API_URL}/api`,
+  baseURL: `${import.meta.env.VITE_API_URL}/api`,
   headers: {
     'Content-Type': 'application/json',
     'X-Requested-With': 'XMLHttpRequest'
