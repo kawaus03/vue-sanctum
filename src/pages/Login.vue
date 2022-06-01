@@ -1,14 +1,17 @@
 <template>
-<h1>Login page</h1>
-<form @submit.prevent="onSubmit">
-  <div>
-    <input v-model="email" type="email" placeholder="Email">
-  </div>
-  <div>
-    <input v-model="password" type="password" placeholder="Password">
-  </div>
-  <button type="submit">Login</button>
-</form>
+  <h1 class="text-3xl font-bold underline">
+    Login pag
+  </h1>
+
+  <form @submit.prevent="onSubmit">
+    <div>
+      <input v-model="email" type="email" placeholder="Email">
+    </div>
+    <div>
+      <input v-model="password" type="password" placeholder="Password">
+    </div>
+    <button type="submit">Login</button>
+  </form>
 </template>
 
 <script lang="ts">

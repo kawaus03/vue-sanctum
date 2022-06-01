@@ -1,5 +1,7 @@
 <template>
-  Home page
+  <h1 class="text-3xl font-bold underline">
+    Home page
+  </h1>
 </template>
 
 <script lang="ts">
