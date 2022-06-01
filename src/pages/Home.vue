@@ -2,6 +2,7 @@
   <h1 class="text-3xl font-bold underline">
     Home page
   </h1>
+  <p v-t="'message'"></p>
 </template>
 
 <script lang="ts">
