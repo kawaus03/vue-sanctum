@@ -1,6 +1,6 @@
 import { InjectionKey } from 'vue'
 import { createStore, MutationTree, ActionTree, GetterTree, Store, useStore as baseUseStore } from 'vuex'
-import { RootState } from '~/types/store/index'
+import { RootState } from '@/types/store/index'
 
 import { user } from './user'
 

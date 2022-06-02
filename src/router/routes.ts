@@ -1,8 +1,8 @@
 import { RouteRecordRaw } from 'vue-router'
 import { authMiddleware, guestMiddleware } from './navigation-guards'
 
-import Login from '~/pages/Login.vue'
-import Home from '~/pages/Home.vue'
+import Login from '@/pages/Login.vue'
+import Home from '@/pages/Home.vue'
 
 export const HOME_PATH = '/home'
 

@@ -1,6 +1,6 @@
 import { NavigationGuard } from 'vue-router'
-import { axios } from '~/plugins/axios'
-import { store } from '~/store/index'
+import { axios } from '@/plugins/axios'
+import { store } from '@/store/index'
 
 export const authMiddleware: NavigationGuard = async (to, from, next) => {
   await axios.get('/user')

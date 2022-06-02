@@ -1,5 +1,5 @@
 import axiosBase, { AxiosInstance, AxiosError } from 'axios'
-import router from '~/router/index'
+import router from '@/router/index'
 
 export interface ApiResponse<T> {
   payload: T;

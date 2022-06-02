@@ -25,9 +25,9 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
-import { axios } from '~/plugins/axios'
+import { axios } from '@/plugins/axios'
 import { useRouter } from 'vue-router'
-import { HOME_PATH } from '~/router/routes'
+import { HOME_PATH } from '@/router/routes'
 
 export default defineComponent({
   setup() {
